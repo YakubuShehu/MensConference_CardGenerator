@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:description" content="Be a part of the annual Men's Conference (2021) by generating your access card."/>
+        <meta property="og:title" content="Men's Conference 2021 - Access Card Generator"/>
+        <meta property="og:image" content="https://demo.yakubushehu.com/mensconference/assets/img/mc_logo.png"/>
+        <meta property="og:url" content="https://demo.yakubushehu.com/mensconference"/>
+
+        <meta name="robots" content="index, follow"/>
+        <meta name="description" content="Be a part of the annual Men's Conference (2021) by generating your access card.">
+        <meta name="keywords" content="men's conference 2021, men's conference, mens conference, mens conference tickets, tickets mens conference, mens conference joke, #mensconference, men conference, men's conference ticket, mens conference ticket, mens conference worldwide, when is the mens conference, what is the mens conference about, where can I get tickets for the mens conference"/>
+        <meta name="author" content="Yakubu Shehu"/>
+
+        <link rel="icon" type="image/png" sizes="251x298" href="assets/img/mc_logo.png">
+
+        <title>Men's Conference 2021 - Access Card Generator</title>
+
+        <!-- Slick -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+        <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
+    
+    <!-- ShareThis -->
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6027f374e326500011c02619&product=sticky-share-buttons" async></script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179929420-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-179929420-1', { 'send_page_view': true });
+    </script>
+
+
+
+
+    <body id="main" class="">
+
+        <!-- Share links -->
+        <div class="sharethis-sticky-share-buttons"></div>
+
+
+
+        <div id="site-content" class="container">
+
+
+
+            <!-- \\ header -->
+            <section id="header-row" class="row p-3 mb-4 bg-white">
+
+                <div class="col-md-3 header-row__logo-block mb-3">
+                    <img src="assets/img/mc_logo.png" alt="Men's Conference 2021 Logo" class="mx-auto d-block" draggable="false">
+                </div>
+
+                <div class="col-md-9 header-row__title-block text-center text-md-start">
+                    <h1 class="fw-bolder">Men's Conference 2021</h1>
+                    <h3 class="text-accent">Access Card Generator</h3>
+                    <p class="fst-italic text-muted">Be part of this year's prestigious Men's Conference by generating your ticket/access card for the event.</p>
+                </div>
+
+                <hr>
+                <div class="col-12 border border-1 border-secondary rounded p-4 mb-3">
+                    <p>💡 This year, we will be discussing <b>important topics</b> such as:<br>(a) The Basics of Mjolo, (b) Knowing Your Worth, (c) How to Handle Rejection, and <a data-bs-toggle="tab" data-bs-target="#navProgramme">so much more...</a></p>
+
+                    <p>📉 There will also be a <b>major adjustment to the Girlfriend Allowance rates and policies</b>; we are dedicated to help you alleviate financial strain during this pandemic.</p>
+
+                    <p>⛔ With improved security at the MC2021 - <b>we will no longer be fooled by women attending the conference dressed up as men</b>. . . . . You might have fooled us in the previous years, Michelle, but <b>not this year</b> 🙄</p>
+                </div>
+
+                <hr>
+
+                <h6 class="text-accent fw-bold"><span>A Message for the Ladies: </span><span><btn id="messageForWomen" class="btn btn-accent btn-sm">Click Here <i class="bi bi-volume-up"></i></btn></span> <span>😘</span></h6>
+
+                <hr>
+
+            </section>
+            <!-- // header -->
+
+
+
+
+            <!-- \\ card generator preview + entry form -->
+            <section id="navContentRow" class="card shadow p-3 p-md-5 m-1">
+
+                <nav>
+                    <div class="nav nav-tabs nav" id="navTab" role="tablist">
+                        <button class="nav-link active" id="navCardGeneratorTab" data-bs-toggle="tab" data-bs-target="#navCardGenerator" type="button" role="tab" aria-controls="navCardGenerator" aria-selected="true">Access Card Generator</button>
+
+                        <button class="nav-link" id="navProgrammeTab" data-bs-toggle="tab" data-bs-target="#navProgramme" type="button" role="tab" aria-controls="navProgrammeTab" aria-selected="false">Programme Details</button>
+
+                        <button class="nav-link" id="navGuestSpeakersTab" data-bs-toggle="tab" data-bs-target="#navGuestSpeakers" type="button" role="tab" aria-controls="navGuestSpeakersTab" aria-selected="false">Guest Speakers</button>
+
+                        <button class="nav-link" id="navTendersTab" data-bs-toggle="tab" data-bs-target="#navTenders" type="button" role="tab" aria-controls="navTendersTab" aria-selected="false">Tenders</button>
+
+                        <a href="https://demo.yakubushehu.com/stingy/" target="_blank" class="nav-link bg-light text-secondary fw-bold" type="button" role="tab" aria-selected="false"><u>Stingy Men Association <i class="bi bi-box-arrow-up-right"></i></u></a>
+                    </div>
+                </nav>
+
+
+
+
+                <div class="tab-content" id="navTabContent">
+
+                    <!-- Card Generator Content -->
+                    <div class="tab-pane fade show active bg-light" id="navCardGenerator" role="tabpanel" aria-labelledby="navCardGeneratorTab">
+
+                        <h5 class="tooltip-icon"><a class="text-accent" href="javascript:void" data-toggle="tooltip" data-placement="left" title="Image not loading? Please try refresing the page."><i class="bi bi-info-circle-fill"></i></a></h5>
+
+                        <div class="row p-3 py-5 p-md-5">
+
+                            <div class="col-md-6 px-lg-5 my-auto mr-3">
+
+
+                                <h4 class="fw-bold text-accent">Fill in Your Details:</h4>
+
+
+                                <!-- \\ detail entry form -->
+                                <form class="id-form mb-5">
+
+                                    <div class="mb-3">
+                                        <label for="inputName" class="form-label mb-0">Name</label>
+                                        <input type="text" maxLength="40" class="form-control form-control-sm" id="inputName" aria-describedby="inputName" required="true" />
+                                    </div>
+                                    <div class="row my-3">
+                                        <div class="col">
+                                            <label for="inputTicketNo" class="form-label mb-0">Ticket No. [auto]</label>
+                                            <input type="text" maxLength="25" class="form-control form-control-sm" id="inputTicketNo" readonly="true" aria-describedby="inputTicketNo" required="true" />
+                                        </div>
+                                    </div>
+                                    <hr class="my-3"/>
+
+                                    <div class="mb-3">
+                                        <h4 class="fw-bold text-accent my-4">Upload Your Photo:</h4>
+                                        <label for="inputPhoto" class="form-label mb-0">Photo</label>
+                                        <input type="file" class="form-control" id="inputPhoto" aria-describedby="inputPhoto" aria-label="Upload" accept="image/*" />
+                                    </div>
+
+                                    <hr class="my-3"/>
+                                </form>
+                                <!-- // detail entry form -->
+
+
+
+                                <!-- Mobile prompt -->
+                                <div class="col-12 mb-5">
+                                    <a class="d-block d-sm-none text-center text-dark" href="#accessCardSlider">View/download your access card below <i class="bi bi-chevron-double-down"></i></a>
+                                </div>
+
+
+
+
+                                <!-- \\ VIP Access Section -->
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="fw-bold text-accent">Need a VIP Access Card?</h4>
+                                    </div>
+
+                                    <div id="VIPAccessCardBody" class="card-body">
+
+                                        <div id="worthyPrompt" class="visually-hidden text-center p-3">
+                                            <h4>Welcome, Grootman.</h4>
+                                            <h4><span class="badge bg-success">You are worthy!</span></h4>
+                                            <img class="img-fluid my-4" visu draggable="false" src="assets/img/clap.gif" alt="clapping GIF" />
+                                            <p>Enjoy your VIP Access ></p>
+
+
+                                            <button id="tryAnotherButton" class="btn btn-sm btn-outline-secondary shadow-sm my-2">Try another question?</button>
+                                        </div>
+
+
+                                        <form id="VIPAccessForm">
+
+                                            <p class="text-muted">Prove Yourself:</p>
+
+                                            <hr/>
+
+                                            <label id="quizLabel" for="inputName" class="form-label mb-3">Quiz: Question</label>
+                                            <div id="quizOptions" class="text-muted">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="quizRadio" id="quizRadio1" value="0">
+                                                    <label class="form-check-label" id="quizRadio1" for="quizRadio1">Option 1</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="quizRadio" id="quizRadio2" value="0">
+                                                    <label class="form-check-label" id="quizRadio2" for="quizRadio2">Option 1</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="quizRadio" id="quizRadio3" value="0">
+                                                    <label class="form-check-label" id="quizRadio3" for="quizRadio3">Option 1</label>
+                                                </div>
+                                            </div>
+
+                                            <p id="messagePrompt" class="mt-3 p-1 rounded bg-light text-danger visually-hidden"></p>
+
+                                            <hr/>
+
+                                            <button id="quizSubmitButton" class="btn btn-sm btn-outline-accent shadow-sm my-2">Submit >></button>
+
+                                        </form>
+                                        <!-- // detail entry form -->
+
+                                    </div>
+                                </div>
+                                <!-- // VIP Access Section -->
+
+
+
+
+                                <!-- \\ download section -->
+                                <section id="download-section" class="container text-center my-5">
+
+                                    <button id="downloadButtonFront" class="btn btn btn-accent shadow">Download Access Card <i class="bi bi-download"></i></button>
+                                    <br>
+                                    <button id="downloadButtonBack" class="btn btn btn-outline-accent shadow mt-4">Download Terms &amp; Conditions <i class="bi bi-download"></i><br></button>
+
+
+                                    <div id="pseudoDownload" class="visually-hidden">
+                                        <a href="#"></a>
+                                    </div>
+
+                                </section>
+                                <!-- // download section-->
+
+                            </div>
+
+
+
+
+
+                            <!-- \\ ID card preview -->
+                            <div id="accessCardSlider" class="col-12 col-md-6 p-md-5 bg-secondary rounded">
+
+
+                                <div class="slider-item ">
+                                    <div id="canvasAreaFront" class="canvas-area">
+                                        <canvas id="cardPreviewCanvas" class="canvas-item" width="1056" height="2200"></canvas>
+                                        <canvas id="detailEntryCanvas" class="canvas-item" width="1056" height="2200"></canvas>
+                                        <canvas id="mugshotCanvas" class="canvas-item"  width="1056" height="2200"></canvas>
+                                    </div>
+
+                                    <!-- background image for canvas -->
+                                    <img id="canvasBGImage" class="img-fluid d-none" src="assets/img/basic_access_card.png" alt="Men's Conference 2021 Access Card" width="1056px" height="2000px">
+                                </div>
+
+                                <div class="slider-item">
+                                    <div id="canvasAreaBack" class="canvas-area bg-light">
+                                        <canvas id="cardPreviewCanvasB" class="canvas-item" width="1056" height="2200"></canvas>
+                                        <canvas id="detailEntryCanvasB" class="canvas-item" width="1056" height="2200"></canvas>
+                                    </div>
+
+                                    <!-- background image for canvas -->
+                                    <img id="canvasBGImageB" class="img-fluid d-none" src="assets/img/ts_and_cs.png" alt="Men's Conference 2021 Access Card" width="1056px" height="1000px">
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- 3rd canvas to combine to -->
+                            <canvas id="canvasRender" class="canvas-area visually-hidden" width="1056" height="2200"></canvas>
+                            <!-- // ID card preview -->
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <!-- Programme Details Content -->
+                    <div class="tab-pane fade rounded" id="navProgramme" role="tabpanel" aria-labelledby="navProgrammeTab">
+
+
+                        <div class="row p-3 py-5 p-md-5">
+
+                            <h3 class="fw-bold mb-3">Programme Details for the MC2021:</h3>
+
+                            <div class="col-12 col-md-6 p-3">
+                                <div class="table-responsive-sm">
+                                    <table class="table table-bordered table-striped align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Friday: 12th February</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td><b>Session 1</b>: Arrival &amp; Registration</td></tr>
+                                            <tr><td>--</tr>
+                                            <tr><td>--</tr>
+                                            <tr><td>--</tr>
+                                            <tr><td>--</tr>
+                                            <tr><td>--</tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 p-3">
+                                <div class="table-responsive-sm">
+                                    <table class="table table-bordered table-striped align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Saturday: 13th February</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td><b>Session 1</b>: Men's Prayer</td></tr>
+                                            <tr><td><b>Session 2</b>: Welcome Speech from Founder</td></tr>
+                                            <tr><td><b>Session 3</b>: Addressing Community Concerns</td></tr>
+                                            <tr><td><b>Session 4</b>: Keynote Speech from Guest Speaker(s)</td></tr>
+                                            <tr><td><b>Session 5 [FW]</b>: Getting Rid of Your Sense of Entitlement</td></tr>
+                                            <tr><td><b>Session 5 [FW]</b>: Being Your Sister's Keeper</td></tr>
+                                            <tr><td><b>Session 7 [FW]</b>: Consent. Learning to keep your hands to yourself <span class="badge bg-accent">IMPORTANT</span></td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="col-12"><hr class="my-4"/></div>
+
+                            <div class="col-12 col-md-6 p-3">
+                                <div class="table-responsive-sm">
+                                    <table class="table table-bordered table-striped align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Sunday: 14th February (🤮)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td><b>Session 1</b>: The Basics of Mjolo</td></tr>
+                                            <tr><td><b>Session 2</b>: 'Ba tla o hurdaa' - Recovery Techniques</td></tr>
+                                            <tr><td><b>Session 3</b>: Knowing Your Worth - You Are The Prize</td></tr>
+                                            <tr><td><b>Session 5</b>: To Simp or Not to Simp</td></tr>
+                                            <tr><td><b>Session 6</b>: How to Take your Ls (PEACEFULLY)</td></tr>
+                                            <tr><td><b>Entertainment </b>: Drinking Game: <i>Never Have I Ever</i></td></tr>
+                                            <tr><td><b>Session 7</b>: Pre-nups: The Pros and Cons (if any)</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 p-3">
+                                <div class="table-responsive-sm">
+                                    <table class="table table-bordered table-striped align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Monay: 15th February</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td><b>Session 1</b>: Discussion on Girlfriend Allowance</td></tr>
+                                            <tr><td><b>Session 2</b>: Official Launch of the <b>#StingyMenAssociation</b></td></tr>
+                                            <tr><td><b>Session 3</b>: Closing Remarks</td></tr>
+                                            <tr><td><b>END</b>: Departure</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- Guest Speakers Content -->
+                    <div class="tab-pane fade bg-light" id="navGuestSpeakers" role="tabpanel" aria-labelledby="navGuestSpeakersTab">
+
+
+                        <div class="row p-3 py-5 p-md-5">
+
+                            <h3 class="fw-bold mb-5">List of Guest Speakers for the MC2021:</h3>
+
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <img src="assets/img/empty-avatar.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">TBA</h5>
+                                        <p class="card-text"></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="card-text"><small class="text-muted">Last updated 5 months ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <!-- Tenders/Procurements Content -->
+                    <div class="tab-pane fade" id="navTenders" role="tabpanel" aria-labelledby="navTendersTab">
+
+
+                        <div class="row p-3 py-5 p-md-5">
+
+                            <h3 class="fw-bold mb-5">List of Supplies/Services Needed the MC2021:</h3>
+
+                            <div class="table-responsive-sm">
+                                <table class="table table-bordered table-light align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">Item</th>
+                                            <th scope="col">Description</th>
+                                            <th scope="col">Closing Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><img draggable="false" src="assets/img/hackernam.png" alt="hackerman" width="150" /></th>
+                                            <td><h6 class="fw-bold text-danger">Hacker Wanted</h6></td>
+                                            <td>Hackerman needed to disable all mobile banking features nationwide. <b>#EWalletMustFall</b></td>
+                                            <td>14th February 2021</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </section>
+            <!-- // card generator preview + entry form -->
+
+
+        </div>
+
+
+
+
+        <!-- \\ footer -->
+        <footer id="siteFooter" class="py-3 bg-dark">
+            <div class="container">
+                <h6 class="text-lead">Website developed by <a href="https://yakubushehu.com" target="_blank">YS</a> | &copy; 2021</h6>
+                <span class="text-muted small">Made in <img src="assets/img/namibia-flag.svg" class="img-fluid" width="20px" draggable="false" /> for gents, by gents</span><span> ✊🏽</span>
+                <p class="text-muted small fst-italic mb-0">with help from The Man Cave</p>
+            </div>
+        </footer>
+        <!-- // footer -->
+
+
+
+
+
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <!-- Bootstrap -->
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+
+        <!-- Toastr -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+        <!-- Slick -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+        <script src="assets/js/scripts.js"></script>
+
+        <script type="text/javascript">
+            $('#accessCardSlider').slick({
+                dots: true,
+                arrows: true,
+                infinite: false
+            });
+        </script>
+
+
+    </body>
+
+</html>
