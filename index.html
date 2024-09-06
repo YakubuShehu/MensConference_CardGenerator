@@ -69,7 +69,7 @@
                 </div>
 
                 <div class="col-md-9 header-row__title-block text-center text-md-start">
-                    <h1 class="fw-bolder">Men's Conference 2021</h1>
+                    <h1 class="fw-bolder">Men's Conference <span class="current-year"></span></h1>
                     <h3 class="text-accent">Access Card Generator</h3>
                     <p class="fst-italic text-muted">Be part of this year's prestigious Men's Conference by generating your ticket/access card for the event.</p>
                 </div>
@@ -78,9 +78,9 @@
                 <div class="col-12 border border-1 border-secondary rounded p-4 mb-3">
                     <p>💡 This year, we will be discussing <b>important topics</b> such as:<br>(a) The Basics of Mjolo, (b) Knowing Your Worth, (c) How to Handle Rejection, and <a data-bs-toggle="tab" data-bs-target="#navProgramme">so much more...</a></p>
 
-                    <p>📉 There will also be a <b>major adjustment to the Girlfriend Allowance rates and policies</b>; we are dedicated to help you alleviate financial strain during this pandemic.</p>
+                    <p>📉 There will also be a <b>major adjustment to the Girlfriend Allowance rates and policies</b>; we are dedicated to help you alleviate financial strain during this economic crisis.</p>
 
-                    <p>⛔ With improved security at the MC2021 - <b>we will no longer be fooled by women attending the conference dressed up as men</b>. . . . . You might have fooled us in the previous years, Michelle, but <b>not this year</b> 🙄</p>
+                    <p>⛔ With improved security at the MC<span class="current-year"></span> - <b>we will no longer be fooled by spies showing up to the conference cosplaying/dressing up as men</b>. . . . . You might have fooled us in the previous years, Michelle, but <b>not this year</b> 🙄</p>
                 </div>
 
                 <hr>
@@ -251,17 +251,20 @@
                                     <div id="canvasAreaFront" class="canvas-area">
                                         <canvas id="cardPreviewCanvas" class="canvas-item" width="1056" height="2200"></canvas>
                                         <canvas id="detailEntryCanvas" class="canvas-item" width="1056" height="2200"></canvas>
+                                        <canvas id="yearDetailsCanvas" class="canvas-item" width="1056" height="2200"></canvas>
+                                        <canvas id="dateYearDetailsCanvas" class="canvas-item" width="1056" height="2200"></canvas>
                                         <canvas id="mugshotCanvas" class="canvas-item"  width="1056" height="2200"></canvas>
                                     </div>
 
                                     <!-- background image for canvas -->
-                                    <img id="canvasBGImage" class="img-fluid d-none" src="assets/img/basic_access_card.png" alt="Men's Conference 2021 Access Card" width="1056px" height="2000px">
+                                    <img id="canvasBGImage" class="img-fluid d-none" src="assets/img/basic_access_card.png" alt="Men's Conference Access Card" width="1056px" height="2000px">
                                 </div>
 
                                 <div class="slider-item">
                                     <div id="canvasAreaBack" class="canvas-area bg-light">
                                         <canvas id="cardPreviewCanvasB" class="canvas-item" width="1056" height="2200"></canvas>
                                         <canvas id="detailEntryCanvasB" class="canvas-item" width="1056" height="2200"></canvas>
+                                        <canvas id="yearDetailsCanvasB" class="canvas-item" width="1056" height="2200"></canvas>
                                     </div>
 
                                     <!-- background image for canvas -->
@@ -289,7 +292,7 @@
 
                         <div class="row p-3 py-5 p-md-5">
 
-                            <h3 class="fw-bold mb-3">Programme Details for the MC2021:</h3>
+                            <h3 class="fw-bold mb-3">Programme Details for the MC<span class="current-year"></span>:</h3>
 
                             <div class="col-12 col-md-6 p-3">
                                 <div class="table-responsive-sm">
@@ -326,7 +329,7 @@
                                             <tr><td><b>Session 4</b>: Keynote Speech from Guest Speaker(s)</td></tr>
                                             <tr><td><b>Session 5 [FW]</b>: Getting Rid of Your Sense of Entitlement</td></tr>
                                             <tr><td><b>Session 5 [FW]</b>: Being Your Sister's Keeper</td></tr>
-                                            <tr><td><b>Session 7 [FW]</b>: Consent. Learning to keep your hands to yourself <span class="badge bg-accent">IMPORTANT</span></td></tr>
+                                            <tr><td><b>Session 7 [FW]</b>: Consent. Learning to keep your hands to yourself <span class="badge bg-accent">MANDATORY</span></td></tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -345,10 +348,9 @@
                                         <tbody>
                                             <tr><td><b>Session 1</b>: The Basics of Mjolo</td></tr>
                                             <tr><td><b>Session 2</b>: 'Ba tla o hurdaa' - Recovery Techniques</td></tr>
-                                            <tr><td><b>Session 3</b>: Knowing Your Worth - You Are The Prize</td></tr>
-                                            <tr><td><b>Session 5</b>: To Simp or Not to Simp</td></tr>
-                                            <tr><td><b>Session 6</b>: How to Take your Ls (PEACEFULLY)</td></tr>
-                                            <tr><td><b>Entertainment </b>: Drinking Game: <i>Never Have I Ever</i></td></tr>
+                                            <tr><td><b>Session 3</b>: Knowing Your Worth</td></tr>
+                                            <tr><td><b>Session 5</b>: Having a Standard</td></tr>
+                                            <tr><td><b>Session 6</b>: How to Take your Ls (RESPECTFULLY)</td></tr>
                                             <tr><td><b>Session 7</b>: Pre-nups: The Pros and Cons (if any)</td></tr>
                                         </tbody>
                                     </table>
@@ -386,9 +388,22 @@
 
                         <div class="row p-3 py-5 p-md-5">
 
-                            <h3 class="fw-bold mb-5">List of Guest Speakers for the MC2021:</h3>
+                            <h3 class="fw-bold mb-5">List of Guest Speakers for the MC<span class="current-year"></span>:</h3>
 
-                            <div class="col-md-6">
+                            <div class="col-12 col-md-3">
+                                <div class="card mb-3">
+                                    <img src="assets/img/empty-avatar.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">TBA</h5>
+                                        <p class="card-text"></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="card-text"><small class="text-muted">Last updated 5 months ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-3">
                                 <div class="card mb-3">
                                     <img src="assets/img/empty-avatar.png" class="card-img-top" alt="...">
                                     <div class="card-body">
@@ -415,7 +430,7 @@
 
                         <div class="row p-3 py-5 p-md-5">
 
-                            <h3 class="fw-bold mb-5">List of Supplies/Services Needed the MC2021:</h3>
+                            <h3 class="fw-bold mb-5">List of Supplies/Services Needed the MC<span class="current-year"></span>:</h3>
 
                             <div class="table-responsive-sm">
                                 <table class="table table-bordered table-light align-middle">
@@ -432,7 +447,7 @@
                                             <th scope="row"><img draggable="false" src="assets/img/hackernam.png" alt="hackerman" width="150" /></th>
                                             <td><h6 class="fw-bold text-danger">Hacker Wanted</h6></td>
                                             <td>Hackerman needed to disable all mobile banking features nationwide. <b>#EWalletMustFall</b></td>
-                                            <td>14th February 2021</td>
+                                            <td>14th February <span class="current-year"></span></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -460,7 +475,7 @@
         <!-- \\ footer -->
         <footer id="siteFooter" class="py-3 bg-dark">
             <div class="container">
-                <h6 class="text-lead">Website developed by <a href="https://yakubushehu.com" target="_blank">YS</a> | &copy; 2021</h6>
+                <h6 class="text-lead">Website developed by <a href="https://yakubushehu.com" target="_blank">YS</a> | &copy; 2021 - <span class="current-year"></span></h6>
                 <span class="text-muted small">Made in <img src="assets/img/namibia-flag.svg" class="img-fluid" width="20px" draggable="false" /> for gents, by gents</span><span> ✊🏽</span>
                 <p class="text-muted small fst-italic mb-0">with help from The Man Cave</p>
             </div>
@@ -493,6 +508,10 @@
                 dots: true,
                 arrows: true,
                 infinite: false
+            });
+            
+            $('.current-year').each(function() {
+                $(this).html(new Date().getFullYear());
             });
         </script>
 

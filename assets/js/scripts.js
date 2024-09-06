@@ -1,6 +1,10 @@
 // key variables
 var mName, mNumber, mPhoto;
 
+const currentYear = new Date().getFullYear();
+
+const rLink = ``
+
 let cardCanvasFront = $("#cardPreviewCanvas")[0];
 let ctx_CC = cardCanvasFront.getContext("2d");
 ctx_CC.font = "600 30px Roboto, sans-serif";
@@ -11,6 +15,20 @@ let ctx_TC = textCanvasFront.getContext("2d");
 ctx_TC.font = "600 50px Roboto, sans-serif";
 ctx_TC.fillStyle = "#2A333A";
 ctx_TC.fillStyle = "textAlign=center";
+
+let yearCanvasFront = $("#yearDetailsCanvas")[0];
+let ctx_TCD_Y = yearCanvasFront.getContext("2d");
+ctx_TCD_Y.font = "600 55px Roboto, sans-serif";
+ctx_TCD_Y.fillStyle = "#FFFFFF";
+ctx_TCD_Y.fillStyle = "textAlign=center";
+ 
+let dateYearCanvasFront = $("#dateYearDetailsCanvas")[0];
+let ctx_TCD_DY = dateYearCanvasFront.getContext("2d");
+ctx_TCD_DY.font = "800 35px Roboto, sans-serif";
+ctx_TCD_DY.fillStyle = "#000000";
+ctx_TCD_DY.fillStyle = "textAlign=center";
+
+
 
 let mugshotCanvas = $("#mugshotCanvas")[0];
 let ctx_MSC = mugshotCanvas.getContext("2d");
@@ -28,6 +46,12 @@ let ctx_TC_B = textCanvasBack.getContext("2d");
 ctx_TC_B.font = "600 50px Roboto, sans-serif";
 ctx_TC_B.fillStyle = "#2A333A";
 ctx_TC_B.fillStyle = "textAlign=center";
+
+let yearCanvasBack = $("#yearDetailsCanvasB")[0];
+let ctx_TCD_Y_B = yearCanvasBack.getContext("2d");
+ctx_TCD_Y_B.font = "600 45px Roboto, sans-serif";
+ctx_TCD_Y_B.fillStyle = "#FFFFFF";
+ctx_TCD_Y_B.fillStyle = "textAlign=center";
 
 
 
@@ -67,6 +91,25 @@ function roundedImage(x, y, width, height, radius) {
 
 
 
+// generate Current Year - front and back
+function drawCurrentYear(location) {
+
+    if (location.match('front')) {
+        ctx_TCD_Y.fillText(currentYear, 222, 800, 869) //s, x, y, mw
+        ctx_TCD_DY.fillText(currentYear, 690, 1743, 100) //s, x, y, mw
+        ctx_TCRL.fillText(currentYear, 690, 1743, 869) //s, x, y, mw
+    }
+    else if (location.match('back')) {
+        ctx_TCD_Y_B.fillText(currentYear, 145, 885, 869) //s, x, y, mw
+    }
+}
+
+
+
+
+
+
+
 // generate random Ticket Number - front and back
 function drawTicketNum(location) {
 
@@ -92,6 +135,7 @@ function drawBackgroundImage() {
     cardBackground.onload = function() {
         ctx_CC.drawImage(cardBackground, 0,0);
         drawTicketNum('front');
+        drawCurrentYear('front');
     }
     cardBackground.onerror = function() { cardBackground.src = './assets/img/nth_basic_access_card.png'; }
 
@@ -99,6 +143,7 @@ function drawBackgroundImage() {
     cardBackground_B.onload = function() {
         ctx_CC_B.drawImage(cardBackground_B, 0,0);
         drawTicketNum('back');
+        drawCurrentYear('back');
     }
     cardBackground_B.onerror = function() { cardBackground.src = './assets/img/ts_and_cs.png'; }
 }
@@ -153,6 +198,8 @@ function combineCanvases(location) {
     if(location.match('front')) {
         ctx_MC.drawImage(cardCanvasFront, 0, 0);
         ctx_MC.drawImage(textCanvasFront, 0, 0);
+        ctx_MC.drawImage(yearCanvasFront, 0, 0);
+        ctx_MC.drawImage(dateYearCanvasFront, 0, 0);
         ctx_MC.drawImage(mugshotCanvas, 0, 0);
     }
 
