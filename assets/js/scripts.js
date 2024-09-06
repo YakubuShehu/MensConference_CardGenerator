@@ -245,7 +245,7 @@ function downloadImage(location) {
         combineCanvases('front');
         let dataURL = downloadCanvas.toDataURL("image/png");
         let dLink = $("#pseudoDownload a");
-        var fileName = "MC2021-AccessCard-" + randomNo.toString() +".png";
+        var fileName = "MC" + currentYear + "-AccessCard-" + randomNo.toString() +".png";
         dLink.attr("href", downloadCanvas.toDataURL());
         dLink.attr("download", fileName);
         dLink[0].click();
